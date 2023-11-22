@@ -12,6 +12,8 @@ let favcolor = new Object();
 favcolor["1"] =  "favorite color: blue"
 favcolor["2"] =  "Favorite color: red"
 
+
+
 //Get records
 app.get("/favcolor", (req, res) => {
 
@@ -43,7 +45,6 @@ app.get("/favcolor", (req, res) => {
     //Return the favorite color
     res.status(200).send({"msg": "HTTP GET - Success"});
 
-
 });
 
 
@@ -64,3 +65,4 @@ app.delete("/favcolor", (req, res) => {
 
 
 app.listen(3000);
+
